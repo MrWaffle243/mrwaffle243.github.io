@@ -1,0 +1,124 @@
+:root {
+    --red: rgb(201, 0, 0);
+    --dark-red: rgb(150, 0, 0);
+	--darker-red:rgb(100, 0, 0);
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.navbar {
+    backdrop-filter: blur(30px)!important;
+    background-color: rgba(0, 0, 0, 0.2)!important;
+}
+
+/* Btns */
+.btn-primary {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-red);
+    border-color: var(--dark-red);
+}
+
+.btn-primary:active {
+    background-color: var(--darker-red)!important;
+    border-color: var(--darker-red)!important;
+}
+
+/* Hero */
+.hero {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 3px 8px #888888;
+}
+
+#hero-img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px #000000;
+    transition: transform .5s;
+}
+
+#hero-img:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in/down/right/left */
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade-in-down {
+	opacity: 1;
+	animation-name: fadeInDown;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in-left {
+	opacity: 1;
+	animation-name: fadeInLeft;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fade-in-right {
+	opacity: 1;
+	animation-name: fadeInRight;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+

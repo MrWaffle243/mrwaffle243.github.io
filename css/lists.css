@@ -1,0 +1,81 @@
+
+/* Carousel */
+
+@media (max-width: 576px) {
+    .carousel-item img{
+        height: 300px;
+    }
+    .carousel-item {
+        max-height: 200px;
+    }
+    #filter-container {
+        min-width: 75vw;
+    }
+    .filter-option-container {
+        display: none;
+    }
+    #apply-filter-btn {
+        display: none;
+    }
+    #clear-filter-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1800px) {
+    .card-img-top {
+    min-height: 349px;
+    min-width: 349px;
+    }
+}
+
+.carousel-item {
+    min-height: 200px;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    max-height: 700px;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    max-width: 400px;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* Cards */
+
+#card-container {
+    max-width: 1500px;
+}
+
+.card {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    border: none;
+    object-fit: cover;
+}
+
+/* Filter Options/Button */
+#filter-container {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid grey;
+    border-radius: 8px;
+    top: 60px;
+}
+
+#filter-btn {
+    max-width: 100px;
+}
+
+.form-select {
+    cursor: pointer;
+}

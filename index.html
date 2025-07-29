@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conor Lyons</title>
+        <meta charset="utf-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h5 class="col navbar-brand">Conor Lyons</h5>
+                <div class="collapse navbar-collapse col-9" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">Games</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col"></div>
+            </div>
+        </nav>
+
+        <!--Content-->
+        <!--Hero-->
+        <div class="col-xxl-8 px-5 py-5 w-100 hero"> 
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
+                <div class="col-10 col-sm-8 col-lg-6" id="hero-image-container"> 
+                    <img src="images/bowie.png" class="d-block mx-lg-auto img-fluid fade-in-down" id="hero-img" width="700" height="500"> 
+                    <!--Random images are disabled, but code is found in random-hero-image-gen.js-->
+                </div> 
+                <div class="col-lg-6"> 
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Conor Lyons</h1> 
+                    <p class="lead">
+                        This website includes lists of my favourite albums, songs, video games and more.
+                        <br>
+                        Find below my recommended lists.
+                    </p> 
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+                        <a href="music-lists/top-10-albums.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2">My Top 10 Albums</a> 
+                        <a type="top-15-games.html" class="btn btn-outline-dark btn-lg px-4">My Top 15 Games</a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        <br>
+        <!--To Music-->
+            <div class="card mb-3 me-auto" id="music-container" style="max-width: 940px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="images/the-white-stripes.png" class="img-fluid rounded" alt="The White Stripes">
+                    </div>
+                    <div class="col-md">
+                        <div class="card-body">
+                            <h5 class="card-title">Music</h5>
+                            <p class="card-text">
+                                The Music page has all of my top lists for music, including albums, artists, and songs.
+                                <br>
+                                You'll quickly see that I love rock music, especially The Beatles and The White Stripes (pictured on the left).
+                            </p>
+                            <a href="music.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Go to Music Home Page</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--To Games-->
+            <div class="card mb-3 ms-auto" id="games-container" style="max-width: 940px;">
+                <div class="row g-0">
+                    <div class="col-md">
+                        <div class="card-body ">
+                            <h5 class="card-title">Video Games</h5>
+                            <p class="card-text ">
+                                The Games page has some lists, including my top 15 video games of all time.
+                                <br>
+                                You'll find that I like story games, rouge-likes, and open-world games.
+                            </p>
+                            <a href="games.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Go to Games Home Page</a> 
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <img src="images/ghost-of-tsushima.png" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+
+
+        <!--Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>

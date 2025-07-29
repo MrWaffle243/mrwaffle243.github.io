@@ -1,0 +1,10 @@
+@media (min-width: 1264px) {
+    #music-container {
+        margin-left: 150px;
+        box-shadow: 8px 8px 3px #888888;
+    }
+    #games-container {
+        margin-right: 150px;
+        box-shadow: 8px 8px 3px #888888;
+    }
+}

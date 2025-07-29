@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music</title>
+        <meta charset="utf-8" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/lists.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h5 class="col navbar-brand">Conor Lyons</h5>
+                <div class="collapse navbar-collapse col-9" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="music.html">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games.html">Games</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col"></div>
+            </div>
+        </nav>
+
+        <!--Content-->
+        <div class="row mx-auto">
+            <!--Carosel-->
+            <div id="carouselExample" class="carousel slide w-75 mx-auto" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner justify-content-center">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/the-white-stripes.png" class="d-none d-md-block img-fluid" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Top 10 Artists</h2>
+                                <a href="#" class="btn btn-dark">Go to List</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="images/jimi-hendrix.png" class="d-none d-md-block img-fluid" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <h2>Top 10 Guitarists</h2>
+                                <a href="#" class="btn btn-dark">Go to List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row mx-auto justify-content-center">
+            <!--Filter-->
+            <div class="col-2 justify-content-center py-3 m-2 mt-5 sticky-md-top fixed-md-top h-50" id="filter-container">
+                <div class="row">
+                    <h5 class="col-7">Filters: </h5>
+                    <button class="col btn btn-primary me-2 d-block d-md-none" id="show-hide-filter">Show</button>
+                </div>
+                <!--Filter Options-->
+                <!-- ↓ ONE FILTER OPTION-->
+                <div class="filter-option-container fade-in">
+                    <hr>
+                    <p>Type:</p>
+                    <select id="type-filter-selection" class="col form-select filter-selection"> <!--REMEMBER TO HAVE A DIFFERENT ID FOR OTHER OPTIONS!-->
+                        <option value="all">All</option>
+                        <option value="albums">Albums</option>
+                        <option value="songs">Songs</option>
+                        <option value="artists">Artists</option>
+                    </select>
+                </div> 
+                <!-- ^ ONE FILTER OPTION-->
+                <div class="filter-option-container fade-in">
+                    <hr>
+                    <p>Decade:</p>
+                    <select id="type-filter-selection" class="col form-select filter-selection"> <!--REMEMBER TO HAVE A DIFFERENT ID FOR OTHER OPTIONS!-->
+                        <option value="all">All</option>
+                        <option value="60s">60s</option>
+                        <option value="70s">70s</option>
+                        <option value="80s">80s</option>
+                        <option value="90s">90s</option>
+                        <option value="00s">00s</option>
+                        <option value="10s">10s</option>
+                    </select>
+                    <hr>
+                </div> 
+                <button id="apply-filter-btn" class="col btn btn-primary me-2 fade-in">Apply</button>
+                <button id="clear-filter-btn" class="col btn btn-primary me-2 fade-in">Clear Filters</button>
+            </div>
+            
+            <!--Cards-->
+            <div class="col container justify-content-center">
+                <div id="card-container" class="row mx-auto row-cols-xlg-4 row-cols-lg-4 row-cols-md-2 row-cols-1">
+                </div>
+            <div>
+        </div>
+
+        <!--Scripts-->
+        <script src="./scripts/filter.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>

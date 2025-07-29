@@ -1,0 +1,22 @@
+.card {
+    display: block;
+}
+
+/* Album Styles */
+.album-number {
+    color: var(--red);
+}
+
+.album-title, .album-number {
+    display: inline;
+}
+
+/* Best/Worst Songs Styles */
+.best-worst-songs-title {
+    color: var(--red);
+    font-weight: 600;
+}
+
+#hero-img {
+    min-width: 250px;
+}
