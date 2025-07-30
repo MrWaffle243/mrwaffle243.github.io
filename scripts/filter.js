@@ -15,9 +15,9 @@ let areFilterOptionsShowing = false;
 const cardList = [
     {
         id: 0,
-        name: "Top 10 Albums",
+        name: "Top 20 Albums",
         image: 'images/deja-vu.png',
-        link: "top-10-albums.html",
+        link: "top-20-albums.html",
         tags: ["albums"]
     },
     {
@@ -46,9 +46,9 @@ const cardList = [
     },    
     {
         id: 0,
-        name: "Top 10 Albums",
+        name: "Top 20 Albums",
         image: 'images/deja-vu.png',
-        link: "top10albums",
+        link: "top20albums",
         tags: ["albums"]
     },
     {
