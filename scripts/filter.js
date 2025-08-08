@@ -16,7 +16,7 @@ const cardList = [
     {
         id: 0,
         name: "Top 20 Albums",
-        image: 'images/deja-vu.png',
+        image: 'images/album-covers/deja-vu.png',
         link: "top-20-albums.html",
         tags: ["albums"]
     },
@@ -35,7 +35,7 @@ const cardList = [
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
-        image: "images/ziggy-stardust.png",
+        image: "images/album-covers/ziggy-stardust.png",
         tags: ["albums", "70s"]
     },
     {
@@ -43,12 +43,12 @@ const cardList = [
         name: "Top 10 Artists",
         image: "images/jimi-hendrix.png",
         tags: ["artists"]
-    },    
-    {
+    }, 
+    {   
         id: 0,
         name: "Top 20 Albums",
-        image: 'images/deja-vu.png',
-        link: "top20albums",
+        image: 'images/album-covers/deja-vu.png',
+        link: "top-20-albums.html",
         tags: ["albums"]
     },
     {
@@ -66,7 +66,7 @@ const cardList = [
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
-        image: "images/ziggy-stardust.png",
+        image: "images/album-covers/ziggy-stardust.png",
         tags: ["albums", "70s"]
     },
     {
@@ -74,8 +74,7 @@ const cardList = [
         name: "Top 10 Artists",
         image: "images/jimi-hendrix.png",
         tags: ["artists"]
-    },
-    
+    }
 ];
 let filterList = [...cardList];
 

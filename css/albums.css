@@ -11,6 +11,10 @@
     display: inline;
 }
 
+.album-description-container {
+    display: none;
+}
+
 /* Best/Worst Songs Styles */
 .best-worst-songs-title {
     color: var(--red);
