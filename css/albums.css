@@ -3,7 +3,7 @@
 }
 
 /* Album Styles */
-.album-number {
+.album-number, .honourable-title {
     color: var(--red);
 }
 
