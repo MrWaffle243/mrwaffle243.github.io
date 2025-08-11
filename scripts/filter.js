@@ -189,6 +189,8 @@ const sortLists = () => {
 
 const clearSort = () => {
     sortSelection.value = "newest"
+    sortLists()
+    renderCards()
 };
 
 // Run on start
@@ -204,6 +206,6 @@ applyFilterBtn.addEventListener("click", () => {
 );
 clearFilterBtn.addEventListener("click", () => {
     clearFilter();
-    clearSort()
+    clearSort();
 });
 showHideFilterBtn.addEventListener("click", showHideFilterOptions);
