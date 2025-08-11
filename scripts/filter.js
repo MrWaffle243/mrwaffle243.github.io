@@ -1,8 +1,8 @@
-// Elements
+// Filter Elements
 const cards = document.getElementById("card-container");
 
 const filterSelections = document.getElementsByClassName("filter-selection")
-const typeFilterSelection = document.getElementById("type-filter-selection");
+//const typeFilterSelection = document.getElementById("type-filter-selection");
 
 const showHideFilterBtn = document.getElementById("show-hide-filter");
 const applyFilterBtn = document.getElementById("apply-filter-btn");
@@ -11,6 +11,25 @@ const clearFilterBtn = document.getElementById("clear-filter-btn");
 const filterOptionContainers = document.getElementsByClassName("filter-option-container");
 let areFilterOptionsShowing = false;
 
+// Sort Elements
+const sortSelection = document.getElementById("sort-selection");
+
+// Sort Functions (for card objs)
+const strToDate = (date) => { // Date str (eg. 11/8/2025) to JS Date obj
+    date = date.split("/");
+    date[1] -= 1
+    date = date.reverse()
+    return new Date(...date)
+};
+
+const dateToStr = (date) => { 
+    day = date.getDate()
+    month = date.getMonth() + 1
+    year = date.getFullYear()
+    return `${day}/${month}/${year}`
+};
+
+
 // Variables
 const cardList = [
     {
@@ -18,68 +37,76 @@ const cardList = [
         name: "Top 20 Albums",
         image: 'images/album-covers/deja-vu.png',
         link: "top-20-albums.html",
-        tags: ["albums"]
+        tags: ["albums"],
+        date: strToDate("27/7/2025")
     },
     {
         id: 1,
         name: "Top 20 Songs",
         image: "images/you-get-what-you-give.png",
-        tags: ["songs"]
+        tags: ["songs"],
+        date: strToDate("11/8/1999")
     },
     {
         id: 2,
         name: "Top 10 Acoustic Songs",
         image: "images/acoustic-paul.jpg",
-        tags: ["songs", "acoustic"]
+        tags: ["songs", "acoustic"],
+        date: strToDate("11/8/1970")
     },
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
         image: "images/album-covers/ziggy-stardust.png",
-        tags: ["albums", "70s"]
+        tags: ["albums", "70s"],
+        date: strToDate("11/8/1999")
     },
     {
         id: 4,
         name: "Top 10 Artists",
         image: "images/jimi-hendrix.png",
-        tags: ["artists"]
-    }, 
-    {   
+        tags: ["artists"],
+        date: strToDate("1/1/2025")
+    },     {
         id: 0,
         name: "Top 20 Albums",
         image: 'images/album-covers/deja-vu.png',
         link: "top-20-albums.html",
-        tags: ["albums"]
+        tags: ["albums"],
+        date: strToDate("1/1/2025")
     },
     {
         id: 1,
         name: "Top 20 Songs",
         image: "images/you-get-what-you-give.png",
-        tags: ["songs"]
+        tags: ["songs"],
+        date: strToDate("1/1/2025")
     },
     {
         id: 2,
         name: "Top 10 Acoustic Songs",
         image: "images/acoustic-paul.jpg",
-        tags: ["songs", "acoustic"]
+        tags: ["songs", "acoustic"],
+        date: strToDate("1/1/2025")
     },
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
         image: "images/album-covers/ziggy-stardust.png",
-        tags: ["albums", "70s"]
+        tags: ["albums", "70s"],
+        date: strToDate("1/1/2025")
     },
     {
         id: 4,
         name: "Top 10 Artists",
         image: "images/jimi-hendrix.png",
-        tags: ["artists"]
+        tags: ["artists"],
+        date: strToDate("1/1/2025")
     }
 ];
 let filterList = [...cardList];
 
-
-// Functions
+// Filter Functions
 const renderCards = () => {
     cards.innerHTML = ``
     if (filterList.length === 0) {
@@ -102,6 +129,7 @@ const renderCards = () => {
                         <div class="card-body">
                             <p class="card-title h5">${card.name}</p>
                             <a href="${link}" class="btn btn-primary">Go to List</a>
+                            <p class="card-date fst-italic mb-0 pt-1"> Last updated: ${dateToStr(card.date)}</p>
                         </div>
                     </div>
                 <div>`
@@ -110,7 +138,7 @@ const renderCards = () => {
 };
 
 const filter = () => {
-    filterList = cardList
+    filterList = cardList;
     for (let selection of filterSelections) {
         if (selection.value === "all") {
             continue
@@ -118,7 +146,6 @@ const filter = () => {
             filterList = cardList.filter((card) => card.tags.includes(selection.value));
         }
     }
-    renderCards()
 };
 
 const clearFilter = () => {
@@ -141,10 +168,44 @@ const showHideFilterOptions = () => {
     areFilterOptionsShowing = !areFilterOptionsShowing;
 };
 
+// Sort functions
+const compareDates = (a, b) => {
+    if (a.date < b.date) {
+        return -1;
+    } else if (a.date > b.date) {
+        return 1
+    }
+    return 0
+};
+
+const sortLists = () => {
+    console.log(sortSelection.value);
+    if (sortSelection.value == "newest") {
+        filterList.sort(compareDates).reverse()
+    } else if (sortSelection.value == "oldest") {
+        filterList.sort(compareDates)
+    }
+};
+
+const clearSort = () => {
+    sortSelection.value = "newest"
+    sortLists()
+    renderCards()
+};
+
 // Run on start
+sortLists()
 renderCards();
 
 // Event Listeners
-applyFilterBtn.addEventListener("click", filter)
-clearFilterBtn.addEventListener("click", clearFilter)
-showHideFilterBtn.addEventListener("click", showHideFilterOptions)
+applyFilterBtn.addEventListener("click", () => {
+    filter();
+    sortLists()
+    renderCards()
+}
+);
+clearFilterBtn.addEventListener("click", () => {
+    clearFilter();
+    clearSort();
+});
+showHideFilterBtn.addEventListener("click", showHideFilterOptions);

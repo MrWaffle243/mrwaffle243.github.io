@@ -5,7 +5,7 @@
     .carousel-item {
         max-height: 200px;
     }
-    #filter-container {
+    #filter-container, #sort-container {
         min-width: 75vw;
     }
     .filter-option-container {
