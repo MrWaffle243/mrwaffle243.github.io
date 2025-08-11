@@ -5,7 +5,7 @@
     .carousel-item {
         max-height: 200px;
     }
-    #filter-sort-container {
+    #filter-container, #sort-container {
         min-width: 75vw;
     }
     .filter-option-container {
@@ -74,7 +74,7 @@
 }
 
 /* Filter Options/Button */
-#filter-sort-container {
+#filter-container {
     background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid grey;
