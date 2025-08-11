@@ -45,7 +45,7 @@
 
 .carousel-item img{
     object-fit: cover;
-    max-height: 700px;
+    max-height: 75vh;
     border-radius: 10px;
 }
 
