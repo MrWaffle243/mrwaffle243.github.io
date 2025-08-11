@@ -2,7 +2,7 @@
 const cards = document.getElementById("card-container");
 
 const filterSelections = document.getElementsByClassName("filter-selection")
-const typeFilterSelection = document.getElementById("type-filter-selection");
+//const typeFilterSelection = document.getElementById("type-filter-selection");
 
 const showHideFilterBtn = document.getElementById("show-hide-filter");
 const applyFilterBtn = document.getElementById("apply-filter-btn");
