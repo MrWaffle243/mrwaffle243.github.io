@@ -1,0 +1,29 @@
+.card {
+    display: block;
+}
+
+/* Album Styles */
+.game {
+    max-width: 640px;
+}
+
+.game-number, .honourable-title {
+    color: var(--red);
+}
+
+.game-title, .game-number {
+    display: inline;
+}
+
+.game-description-container {
+    display: block;
+}
+
+.game-time-played, .game-platforms-title {
+    color: var(--red);
+    font-weight: 600;
+}
+
+#hero-img {
+    min-width: 250px;
+}
