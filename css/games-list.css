@@ -2,9 +2,9 @@
     display: block;
 }
 
-/* Album Styles */
+/* Game Styles */
 .game {
-    max-width: 640px;
+    max-width: 740px;
 }
 
 .game-number, .honourable-title {
@@ -16,7 +16,7 @@
 }
 
 .game-description-container {
-    display: block;
+    display: none;
 }
 
 .game-time-played, .game-platforms-title {
@@ -26,4 +26,8 @@
 
 #hero-img {
     min-width: 250px;
+}
+
+.botw-totk {
+    font-weight: 600;
 }
