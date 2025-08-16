@@ -50,6 +50,47 @@ body {
     transform: scale(1.1);
 }
 
+/* Carousel Styles */
+@media (max-width: 576px) {
+    .carousel-item img{
+        height: 300px;
+    }
+    .carousel-item {
+        max-height: 200px;
+    }
+}
+
+/* Carousel */
+.carousel-control-prev-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c90000' %3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3E%3C/svg%3E") !important;*/
+    background-color: rgba(72, 72, 72, 0.8);
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon {
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c90000' %3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E") !important;*/
+    background-color: rgba(72, 72, 72, 0.8);
+    border-radius: 10px;
+}
+
+.carousel-item {
+    min-height: 200px;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    max-height: 75vh;
+    border-radius: 10px;
+}
+
+.carousel-caption {
+    max-width: 400px;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
 /* Fade-in/down/right/left */
 .fade-in {
 	opacity: 1;
