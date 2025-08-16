@@ -13,8 +13,8 @@ body {
 }
 
 .navbar {
-    backdrop-filter: blur(30px)!important;
-    background-color: rgba(0, 0, 0, 0.2)!important;
+    background-color:rgb(20, 20, 20);
+	mix-blend-mode: difference;
 }
 
 /* Btns */
