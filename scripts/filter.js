@@ -45,29 +45,31 @@ const cardList = [
         name: "Top 20 Songs",
         image: "images/you-get-what-you-give.png",
         tags: ["songs"],
-        date: strToDate("11/8/1999")
+        date: strToDate("1/1/1970")
     },
     {
         id: 2,
         name: "Top 10 Acoustic Songs",
         image: "images/acoustic-paul.jpg",
         tags: ["songs", "acoustic"],
-        date: strToDate("11/8/1970")
+        date: strToDate("1/1/1970")
     },
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
         image: "images/album-covers/ziggy-stardust.png",
         tags: ["albums", "70s"],
-        date: strToDate("11/8/1999")
+        date: strToDate("1/1/1970")
     },
     {
         id: 4,
         name: "Top 10 Artists",
         image: "images/jimi-hendrix.png",
         tags: ["artists"],
-        date: strToDate("1/1/2025")
-    },     {
+        date: strToDate("1/1/1970")
+    },     
+/*
+    {
         id: 0,
         name: "Top 20 Albums",
         image: 'images/album-covers/deja-vu.png',
@@ -102,7 +104,9 @@ const cardList = [
         image: "images/jimi-hendrix.png",
         tags: ["artists"],
         date: strToDate("1/1/2025")
+        
     }
+        */
 ];
 let filterList = [...cardList];
 
@@ -121,15 +125,20 @@ const renderCards = () => {
     } else {
         let link
         filterList.forEach((card) => {
+
             link = Object.hasOwn(card, "link") ? `music-lists/${card.link}` : "#";
+            isBtnDisabled = Object.hasOwn(card, "link") ? "btn-primary" : "btn-secondary disabled";
+            btnText = Object.hasOwn(card, "link") ? "Go To List" : "Coming Soon";
+            lastUpdatedText = card.date.getTime() != strToDate("1/1/1970").getTime() ? `${dateToStr(card.date)}` : "TBC";
+
             cards.innerHTML += `
                 <div class="col">
                     <div class="card fade-in" id="card-${card.id}">
                     <img src="${card.image}" class="card-img-top">
                         <div class="card-body">
                             <p class="card-title h5">${card.name}</p>
-                            <a href="${link}" class="btn btn-primary">Go to List</a>
-                            <p class="card-date fst-italic mb-0 pt-1"> Last updated: ${dateToStr(card.date)}</p>
+                            <a href="${link}" class="btn ${isBtnDisabled}" >${btnText}</a>
+                            <p class="card-date fst-italic mb-0 pt-1"> Last updated: ${lastUpdatedText}</p>
                         </div>
                     </div>
                 <div>`
@@ -152,7 +161,7 @@ const clearFilter = () => {
     filterList = cardList;
 
     for (let selection of filterSelections) {
-        selection.value = "all"
+        selection.value = "all";
     }
     renderCards();
 };
@@ -173,35 +182,34 @@ const compareDates = (a, b) => {
     if (a.date < b.date) {
         return -1;
     } else if (a.date > b.date) {
-        return 1
+        return 1;
     }
-    return 0
+    return 0;
 };
 
 const sortLists = () => {
-    console.log(sortSelection.value);
     if (sortSelection.value == "newest") {
-        filterList.sort(compareDates).reverse()
+        filterList.sort(compareDates).reverse();
     } else if (sortSelection.value == "oldest") {
-        filterList.sort(compareDates)
+        filterList.sort(compareDates);
     }
 };
 
 const clearSort = () => {
-    sortSelection.value = "newest"
-    sortLists()
-    renderCards()
+    sortSelection.value = "newest";
+    sortLists();
+    renderCards();
 };
 
 // Run on start
-sortLists()
+sortLists();
 renderCards();
 
 // Event Listeners
 applyFilterBtn.addEventListener("click", () => {
     filter();
-    sortLists()
-    renderCards()
+    sortLists();
+    renderCards();
 }
 );
 clearFilterBtn.addEventListener("click", () => {
