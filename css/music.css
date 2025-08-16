@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+    #filter-container, #sort-container {
+        min-width: 75vw;
+    }
+    .filter-option-container {
+        display: none;
+    }
+    #apply-filter-btn {
+        display: none;
+    }
+    #clear-filter-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 1800px) {
+    .card-img-top {
+        min-height: 349px;
+        min-width: 349px;
+    }
+}
+
+/* Cards */
+
+#card-container {
+    max-width: 1500px;
+}
+
+.card {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    border: none;
+    object-fit: cover;
+}
+
+/* Filter Options/Button */
+#filter-container {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid grey;
+    border-radius: 8px;
+    top: 60px;
+}
+
+#filter-btn {
+    max-width: 100px;
+}
+
+.form-select {
+    cursor: pointer;
+}
