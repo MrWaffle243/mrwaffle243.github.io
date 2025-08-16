@@ -2,6 +2,7 @@
     display: block;
 }
 
+
 /* Game Styles */
 .game {
     max-width: 740px;
@@ -28,6 +29,6 @@
     min-width: 250px;
 }
 
-.botw-totk {
+.games-bold {
     font-weight: 600;
 }
