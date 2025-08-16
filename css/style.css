@@ -113,7 +113,7 @@ body {
 	opacity: 1;
 	animation-name: fadeInDown;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: ease-in-out;
 	animation-duration: 1s;
 }
 
@@ -132,7 +132,7 @@ body {
 	opacity: 1;
 	animation-name: fadeInLeft;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: ease-in-out;
 	animation-duration: 1s;
 }
 
@@ -151,7 +151,7 @@ body {
 	opacity: 1;
 	animation-name: fadeInRight;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: ease-in-out;
 	animation-duration: 1s;
 }
 
