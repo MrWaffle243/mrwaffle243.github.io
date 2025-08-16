@@ -16,7 +16,7 @@
 }
 
 .game-description-container {
-    display: none;
+    display: none; /*use block/none*/
 }
 
 .game-time-played, .game-platforms-title {
