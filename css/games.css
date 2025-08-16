@@ -17,3 +17,9 @@
     border: none;
     object-fit: cover;
 }
+
+.carousel-item img{
+    object-fit: cover;
+    max-height: 60vh;
+    border-radius: 10px;
+}
