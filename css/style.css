@@ -12,9 +12,11 @@ body {
 	color: white;
 }
 
+/* Nav */
+
 .navbar {
     backdrop-filter: blur(30px)!important;
-    background-color: rgba(0, 0, 0, 0.2)!important;
+    background-color: rgba(0, 0, 0, 0.4)!important;
 }
 
 /* Btns */
