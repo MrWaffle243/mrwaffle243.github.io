@@ -1,0 +1,30 @@
+.card {
+    display: block;
+}
+
+/* song Styles */
+.song {
+    max-width: 740px;
+}
+
+.song-number, .honourable-title {
+    color: var(--red);
+}
+
+.song-title, .song-number {
+    display: inline;
+}
+
+.song-description-container {
+    display: none;
+}
+
+/* Best/Worst Songs Styles */
+.info-title {
+    color: var(--red);
+    font-weight: 600;
+}
+
+#hero-img {
+    min-width: 250px;
+}
