@@ -1,0 +1,47 @@
+--CANDIDATES--
+
+Paul: 9
+John: 12
+John & Paul: 1
+George: 2
+
+
+--Rubber Soul--
+Norwegian Wood
+In My Life
+
+--Revolver--
+Im Only Sleeping
+Here, There and Everywhere
+
+--Sgt Peppers--
+Lovely Rita
+Lucy In The Sky With Diamonds
+A Day In The Life
+
+--The White Album--
+Dear Prudence
+While My Guitar Gently Weeps
+Blackbird
+Martha My Dear
+
+--Yellow Submarine--
+Hey Bulldog
+
+--Abbey Road--
+I Want You (She's So Heavy)
+Here Comes The Sun
+
+--Let It Be--
+Get Back
+Two Of Us
+Across The Universe
+
+--Non-album Singles--
+Strawberry Fields Forever
+Lady Madonna
+Rain
+Paperback Writer
+Don't Let Me Down
+We Can Work It Out
+Day Tripper

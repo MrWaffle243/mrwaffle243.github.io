@@ -1,0 +1,41 @@
+--LIST--
+1. Blackbird
+2. Lucy In The Sky With Diamonds
+3. Here, There and Everywhere
+4. Strawberry Fields Forever
+5. Lovely Rita
+6. I Want You (She's So Heavy)
+7. Norwegian Wood
+8. I'm Only Sleeping
+9. Paperback Writer
+10. Two Of Us
+11. Rain
+12. Lady Madonna
+13. Hey Bulldog
+14. A Day In The Life
+15. Dear Prudence
+
+--STATS--
+-Primary Writer-
+Paul: 6
+John: 8
+Paul & John: 1 (A Day In The Life)
+George: 0
+
+-Albums-
+Rubber Soul: 1
+Revolver: 2
+Sgt Peppers: 3
+The White Album: 2
+Yellow Submarine: 1
+Abbey Road: 1
+Let It Be: 1
+Non-album singles: 4
+
+
+
+
+
+
+
+
