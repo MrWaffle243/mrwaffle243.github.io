@@ -19,6 +19,10 @@
     display: none;
 }
 
+.album-title {
+    font-style: italic;
+}
+
 /* Best/Worst Songs Styles */
 .info-title {
     color: var(--red);
