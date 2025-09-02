@@ -27,7 +27,8 @@ patches, texts, autotexts = plt.pie(amounts, labels=albums, autopct='%1.1f%%',
 
 # Text color
 plt.setp(autotexts)
-autotexts[6].set_color('white')
+autotexts[0].set_color('white')
+#autotexts[6].set_color('white')
 autotexts[7].set_color('white')
 
 # Title
@@ -42,7 +43,7 @@ plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = prop.get_name()
 
 # Save as a file
-#plt.savefig('beatles-albums-pie-chart.png', format='png', dpi=200, transparent=True)
+plt.savefig('beatles-albums-pie-chart.png', format='png', dpi=200, transparent=True)
 
 # Show
 plt.show()
