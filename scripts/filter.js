@@ -68,6 +68,14 @@ const cardList = [
         tags: ["artists"],
         date: strToDate("1/1/1970")
     },     
+    {
+        id: 5,
+        name: "Top 15 Beatles Songs",
+        image: "/images/album-covers/paperback-writer-and-rain.jpg",
+        link: "top-15-beatles-songs.html",
+        tags: ["60s", "specific-artists", "songs"],
+        date: strToDate("31/8/2025")
+    }, 
 /*
     {
         id: 0,
