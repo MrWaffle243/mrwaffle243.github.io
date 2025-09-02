@@ -38,7 +38,7 @@
 
         <!--Hero-->
         <div class="col-xxl-8 px-5 pt-5 pb-0 w-100 hero mb-3 song-hero"> 
-            <div class="row g-5 py-0 row align-items-center flex-lg-row-reverse"> 
+            <div class="row g-5 py-0 align-items-center flex-lg-row-reverse"> 
                 <div class="col-10 col-sm-8 col-lg-6">
                     <image src="/images/the-beatles.jpg" class="d-block mx-lg-auto img-fluid fade-in-down" id="hero-img">
                 </div>
@@ -47,9 +47,35 @@
                     <p class="lead">
                         As of 31/8/25.
                     </p>
-                    <a href="top-beatles-songs-stats.html" class="lead link-danger link-offset-1 fst-italic">Stats for this page</a>
+                    <!--Opens modal-->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#statsModal" class="lead link-danger link-offset-1 fst-italic">
+                        Stats for this page
+                    </a>
                     <br>
+                    <!-- Modal -->
+                    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="max-width: 1500px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="statsModalLabel">Top 15 Beatles Songs Stats</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-md">
+                                        <image src="/images/beatles-writer-pie-chart.png" class="img-fluid" />
+                                    </div>
+                                    <div class="col-md">
+                                        <image src="/images/beatles-albums-pie-chart.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <br>
+
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
                         <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="/music.html">Back to Music Home Page</a>
                     </div> 
@@ -359,8 +385,91 @@
                 </div>
                 <!--End of One song-->
                 <br>
+                <!--Start of One song-->
+                <div class="song card mx-auto p-2">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <img src="/images/album-covers/paperback-writer-&-rain.jpg" class="img-fluid rounded song-cover">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body px-3 pt-1 pb-0">
+                                <h1 class="song-number col me-3">#8</h1>
+                                <h2 class="card-title song-title col">Paperback Writer</h2>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col pe-0">
+                                        <div class="row">
+                                            <p class="info-title mb-0">Length</p>
+                                            <p class="info-text"> 2 minutes 19 seconds </p>
+                                        </div>
+                                        <div class="row">
+                                            <p class="info-title mb-0">Primary Songwriter</p>
+                                            <p class="info-text">Paul McCartney</p>
+                                        </div>
+                                    </div>
+                                    <div class="vr d-flex p-0"></div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <p class="info-title mb-0">Album</p>
+                                            <p class="info-text mb-0"> Non-album Single: <span class="album-title">Paperback Writer / Rain </span>(1966)</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br class="song-description-container">
+                    <div class="row song-description-container">
+                        <hr style="width: 95%;" class="mx-auto">
+                        <p class="card-text song-description-text px-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <!--End of One song-->
+                <br>
+                <!--Start of One song-->
+                <div class="song card mx-auto p-2">
+                    <div class="row g-0">
+                        <div class="col-md">
+                            <img src="/images/album-covers/let-it-be.jpg" class="img-fluid rounded song-cover">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body px-3 pt-1 pb-0">
+                                <h1 class="song-number col me-3">#9</h1>
+                                <h2 class="card-title song-title col">Two Of Us</h2>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col pe-0">
+                                        <div class="row">
+                                            <p class="info-title mb-0">Length</p>
+                                            <p class="info-text"> 3 minutes 37 seconds </p>
+                                        </div>
+                                        <div class="row">
+                                            <p class="info-title mb-0">Primary Songwriter</p>
+                                            <p class="info-text">Paul McCartney</p>
+                                        </div>
+                                    </div>
+                                    <div class="vr d-flex p-0"></div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <p class="info-title mb-0">Album</p>
+                                            <p class="info-text mb-0"> <span class="album-title">Let It Be </span>(1970)</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br class="song-description-container">
+                    <div class="row song-description-container">
+                        <hr style="width: 95%;" class="mx-auto">
+                        <p class="card-text song-description-text px-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+                <!--End of One song-->
+                <br>
                 
-
 
 
         <!--Scripts-->

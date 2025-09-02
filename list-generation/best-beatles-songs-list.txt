@@ -6,9 +6,9 @@
 5. Lovely Rita
 6. I Want You (She's So Heavy)
 7. Norwegian Wood
-8. I'm Only Sleeping
-9. Paperback Writer
-10. Two Of Us
+8. Paperback Writer
+9. Two Of Us
+10. I'm Only Sleeping
 11. Rain
 12. Lady Madonna
 13. Hey Bulldog
@@ -30,7 +30,7 @@ The White Album: 2
 Yellow Submarine: 1
 Abbey Road: 1
 Let It Be: 1
-Non-album singles: 4
+Non-album Singles: 4
 
 
 
