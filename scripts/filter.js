@@ -160,7 +160,10 @@ const sortLists = () => {
     if (sortSelection.value == "newest") {
         filterList.sort(compareDates).reverse();
     } else if (sortSelection.value == "oldest") {
-        filterList.sort(compareDates);
+        let actualFilterList = filterList.filter((card) => card.date.getFullYear() != 1970);
+        let comingSoonCards = filterList.filter((card) => card.date.getFullYear() == 1970);
+        actualFilterList.sort(compareDates);
+        filterList = [...actualFilterList, ...comingSoonCards];
     }
 };
 
