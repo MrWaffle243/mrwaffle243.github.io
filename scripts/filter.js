@@ -75,46 +75,7 @@ const cardList = [
         link: "top-15-beatles-songs.html",
         tags: ["60s", "specific-artists", "songs"],
         date: strToDate("31/8/2025")
-    }, 
-/*
-    {
-        id: 0,
-        name: "Top 20 Albums",
-        image: 'images/album-covers/deja-vu.png',
-        link: "top-20-albums.html",
-        tags: ["albums"],
-        date: strToDate("1/1/2025")
-    },
-    {
-        id: 1,
-        name: "Top 20 Songs",
-        image: "images/you-get-what-you-give.png",
-        tags: ["songs"],
-        date: strToDate("1/1/2025")
-    },
-    {
-        id: 2,
-        name: "Top 10 Acoustic Songs",
-        image: "images/acoustic-paul.jpg",
-        tags: ["songs", "acoustic"],
-        date: strToDate("1/1/2025")
-    },
-    {
-        id: 3,
-        name: "Top 10 Albums from the 70s",
-        image: "images/album-covers/ziggy-stardust.png",
-        tags: ["albums", "70s"],
-        date: strToDate("1/1/2025")
-    },
-    {
-        id: 4,
-        name: "Top 10 Artists",
-        image: "images/jimi-hendrix.png",
-        tags: ["artists"],
-        date: strToDate("1/1/2025")
-        
     }
-        */
 ];
 let filterList = [...cardList];
 
