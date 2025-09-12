@@ -87,7 +87,7 @@ const cardList = [
     {
         id: 6,
         name: "Top 10 Guitarists",
-        image: "/images/jimi-hendrix.png",
+        image: "/images/jimi-hendrix.jpg",
         tags: ["artists", "guitar", "guitarists", "featured"],
         date: strToDate("1/1/1970")
     }
