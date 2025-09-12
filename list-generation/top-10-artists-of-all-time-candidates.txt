@@ -1,0 +1,53 @@
+---CANDIDATES---
+The White Stripes
+Jack White
+The Beatles
+Paul McCartney️
+Led Zeppelin
+Jimi Hendrix
+Rory Gallagher
+Pixies
+The Clash
+Blur
+The Strokes
+David Bowie
+QOTSA
+Bob Dylan
+Foo Fighters
+Oasis
+Gorillaz
+Thin Lizzy
+Radiohead
+Soundgarden
+
+---GROUPED---
+
+--ABSOLUTELYYYYYYYYYY--
+The White Stripes✔
+The Beatles✔️
+Pixies✔️
+
+--ALMOST CERTAIN--
+Jack White✔️
+Led Zeppelin✔️
+Jimi Hendrix✔️
+
+--SUUUPER LIKELY--
+David Bowie✔️
+QOTSA✔️
+Thin Lizzy✔️
+
+--VERY LIKELY--
+Rory Gallagher✔️
+The Clash
+Radiohead✔️
+Soundgarden✔️
+
+--MAYBE--
+Paul McCartney
+Bob Dylan✔️
+Blur✔️
+The Strokes✔️
+Foo Fighters✔️
+Oasis✔️
+Gorillaz✔️
