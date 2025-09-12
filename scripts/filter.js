@@ -70,10 +70,11 @@ const cardList = [
     },
     {
         id: 4,
-        name: "Top 10 Artists",
+        name: "Top 15 Artists",
         image: "/images/the-white-stripes.png",
+        link: "top-15-artists.html",
         tags: ["artists", "featured"],
-        date: strToDate("1/1/1970")
+        date: strToDate("12/9/2025")
     },     
     {
         id: 5,
