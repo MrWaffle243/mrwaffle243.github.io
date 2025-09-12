@@ -33,18 +33,25 @@ const dateToStr = (date) => {
 // Variables
 const cardList = [
     {
+        id: -1,
+        name: "Top 10 White Stripes Songs",
+        image: "/images/album-covers/lets-shake-hands.jpg",
+        tags: ["artists", "specific artists", "00s"],
+        date: strToDate("1/1/1970")
+    },
+    {
         id: 0,
         name: "Top 20 Albums",
         image: '/images/album-covers/deja-vu.png',
         link: "top-20-albums.html",
-        tags: ["albums"],
+        tags: ["albums", "featured"],
         date: strToDate("27/7/2025")
     },
     {
         id: 1,
         name: "Top 20 Songs",
         image: "/images/you-get-what-you-give.png",
-        tags: ["songs"],
+        tags: ["songs", "featured"],
         date: strToDate("1/1/1970")
     },
     {
@@ -57,7 +64,7 @@ const cardList = [
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
-        image: "/images/album-covers/ziggy-stardust.png",
+        image: "/images/album-covers/led-zeppelin-i.jpg",
         tags: ["albums", "70s"],
         date: strToDate("1/1/1970")
     },
@@ -65,7 +72,7 @@ const cardList = [
         id: 4,
         name: "Top 10 Artists",
         image: "/images/the-white-stripes.png",
-        tags: ["artists"],
+        tags: ["artists", "featured"],
         date: strToDate("1/1/1970")
     },     
     {
@@ -73,8 +80,15 @@ const cardList = [
         name: "Top 15 Beatles Songs",
         image: "/images/album-covers/paperback-writer-and-rain.jpg",
         link: "top-15-beatles-songs.html",
-        tags: ["60s", "specific-artists", "songs"],
+        tags: ["60s", "specific artists", "songs"],
         date: strToDate("31/8/2025")
+    },
+    {
+        id: 6,
+        name: "Top 10 Guitarists",
+        image: "/images/jimi-hendrix.png",
+        tags: ["artists", "guitar", "guitarists", "featured"],
+        date: strToDate("1/1/1970")
     }
 ];
 let filterList = [...cardList];
