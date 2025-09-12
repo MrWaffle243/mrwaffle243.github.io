@@ -1,0 +1,37 @@
+.card {
+    display: block;
+}
+
+/* artist Styles */
+.artist {
+    max-width: 740px;
+}
+
+.artist-number, .honourable-title {
+    color: var(--red);
+}
+
+.artist-title, .artist-number {
+    display: inline;
+}
+
+.artist-description-container {
+    display: none;
+}
+
+.album-title {
+    font-style: italic;
+}
+
+.info-title {
+    color: var(--red);
+    font-weight: 600;
+}
+
+#hero-img {
+    min-width: 250px;
+}
+
+ol li {
+    list-style-position: inside;
+}
