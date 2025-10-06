@@ -35,6 +35,11 @@ body {
     border-color: var(--darker-red)!important;
 }
 
+.disabled {
+	cursor: not-allowed; 
+	pointer-events: all !important; 
+} 
+
 /* Hero */
 .hero {
     background-color: white;
