@@ -20,7 +20,7 @@ const songSearch = async () => {
     console.log(deezerURL + searchQuery);
 
     try {
-        const res = await fetch(deezerURL + searchQuery);
+        const res = await fetch('https://api.deezer.com/search?q=track:"i need a dollar"');
         const data = await res.json();
         console.log(data);
     } catch (err) {
