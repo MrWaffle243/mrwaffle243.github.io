@@ -36,7 +36,7 @@ const cardList = [
         id: -1,
         name: "Top 10 White Stripes Songs",
         image: "/images/album-covers/lets-shake-hands.jpg",
-        tags: ["artists", "specific artists", "00s"],
+        tags: ["specific artists", "00s", "songs"],
         date: strToDate("1/1/1970")
     },
     {
@@ -51,8 +51,9 @@ const cardList = [
         id: 1,
         name: "Top 20 Songs",
         image: "/images/you-get-what-you-give.png",
+        link: "top-20-songs.html",
         tags: ["songs", "featured"],
-        date: strToDate("1/1/1970")
+        date: strToDate("19/12/2025")
     },
     {
         id: 2,
