@@ -51,6 +51,31 @@
                         <br>
                         As of 19/12/25.
                     </p>
+                <!--Opens modal-->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#statsModal" class="lead link-danger link-offset-1 fst-italic">
+                        Stats for this page
+                    </a>
+                    <br>
+                    <!-- Modal -->
+                    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true" aria-modal="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="statsModalLabel">Top 20 Songs Of All Time Stats</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-md mb-3">
+                                        <image src="/images/top-songs-decades-stats.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
                         <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="/music.html">Back to Music Home Page</a>
                     </div> 
