@@ -53,6 +53,32 @@
                         <br>
                         I tried not to repeat any bands/artists more than twice.
                     </p>
+                    <!--Opens modal-->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#statsModal" class="lead link-danger link-offset-1 fst-italic">
+                        Stats for this page
+                    </a>
+                    <br>
+                    <!-- Modal -->
+                    <div class="modal fade" id="statsModal" tabindex="-1" aria-labelledby="statsModalLabel" aria-hidden="true" aria-modal="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="statsModalLabel">Top 20 Albums Of All Time Stats</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row pb-0"> <!--NO BOTTOM PADDING because of extra text-->
+                                    <div class="col-md mb-3">
+                                        <image src="/images/top-albums-decades-stats.png" class="img-fluid" />
+                                        <p class="fst-italic text-center d-block mb-0">*No albums were from the 2010s</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
                         <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" href="/music.html">Back to Music Home Page</a>
                     </div> 
@@ -469,7 +495,7 @@
                         <div class="col-md-7">
                             <div class="card-body">
                                 <h1 class="album-number col me-3">#11</h1>
-                                <h2 class="card-title album-title col">London Calling  <em>(1979)</em> </h2>
+                                <h2 class="card-title album-title col">London Calling <em>(1979)</em> </h2>
                                 <h5 class="byline fst-italic">By The Clash</h5>
                                 <div class="row">
                                     <div class="col pe-0">
@@ -638,10 +664,7 @@
                                 <!--Note that because this albums title is so long, the bottom is longer than others.
                                     This also means that if you decide to add a description, it will have a weird gap.
                                 -->
-                                <h2 class="card-title album-title col">
-                                    The Rise and Fall of Ziggy Stardust 
-                                    and the Spiders From Mars <em>(1971)</em> 
-                                </h2>
+                                <h2 class="card-title album-title col">The Rise and Fall of Ziggy Stardust and the Spiders From Mars <em>(1971)</em> </h2>
                                 <h5 class="byline fst-italic">By David Bowie</h5>
                                 <div class="row">
                                     <div class="col pe-0">
@@ -891,7 +914,7 @@
                         </div>
                         <div class="col text-center">
                             <img src="/images/album-covers/morning-glory.jpg" class="img-fluid rounded honourable-album-cover">
-                            <h4 class="album-title"><span style="font-size: 19px;">(What's the Story) <br> Morning Glory? <em>(1995)</em> </span> </h4>
+                            <h4 class="album-title"><span style="font-size: 19px;">(What's the Story) Morning Glory? <em>(1995)</em> </span> </h4>
                             <h5 class="byline fst-italic">By Oasis</h5>
                         </div>
                         <div class="col text-center">
