@@ -31,7 +31,7 @@ for point in data:
 
 
 # Count of decades
-countOfDecades = [0] * 6 # 0 is 1960s, 5 is 2010s
+countOfDecades = [0] * 5 # 0 is 1960s, 5 is 2010s
 sortedYears = sorted(years)
 
 decadeIndex = 0
@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 fig, ax = plt.subplots()
-decadeLabels = ["60s", "70s", "80s", "90s", "00s", "10s"]
+decadeLabels = ["60s", "70s", "80s", "90s", "00s"]
 
 colors = ["#c90000", "#fffef2", "#141414"] 
 
