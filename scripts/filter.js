@@ -65,7 +65,7 @@ const cardList = [
     {
         id: 3,
         name: "Top 10 Albums from the 70s",
-        image: "/images/album-covers/led-zeppelin-i.jpg",
+        image: "/images/album-covers/led-zeppelin-iv.jpg",
         tags: ["albums", "70s"],
         date: strToDate("1/1/1970")
     },
