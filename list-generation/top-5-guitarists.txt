@@ -1,0 +1,15 @@
+--CANDIDATES--
+Jimi Hendrix
+Jack White
+Jimmy Page
+Rory Gallagher
+Johnny Marr
+David Gilmour
+Eric Clapton
+
+--LIST--
+1. Jimi Hendrix
+2. Jack White
+3. Jimmy Page
+4. Rory Gallagher
+5. Johnny Marr
