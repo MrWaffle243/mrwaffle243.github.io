@@ -87,10 +87,11 @@ const cardList = [
     },
     {
         id: 6,
-        name: "Top 10 Guitarists",
+        name: "Top 5 Guitarists",
         image: "/images/jimi-hendrix.jpg",
+        link: "top-5-guitarists.html",
         tags: ["artists", "guitar", "guitarists", "featured"],
-        date: strToDate("1/1/1970")
+        date: strToDate("25/2/2026")
     }
 ];
 let filterList = [...cardList];
