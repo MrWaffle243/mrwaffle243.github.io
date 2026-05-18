@@ -92,6 +92,14 @@ const cardList = [
         link: "top-5-guitarists.html",
         tags: ["artists", "guitar", "guitarists", "featured"],
         date: strToDate("25/2/2026")
+    },
+    {
+        id: 7,
+        name: "Top 5 Concerts",
+        image: "/images/concerts/jack-white-troxy.png",
+        link: "top-5-concerts.html",
+        tags: ["artists", "concerts"],
+        date: strToDate("18/5/2026")
     }
 ];
 let filterList = [...cardList];
